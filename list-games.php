@@ -17,6 +17,7 @@ $results = mysqli_query($mysqli, $sql);
 <?php while($a_row = mysqli_fetch_assoc($results)):?>
 <tr>
 <td><a href="game-details.php?id=<?=$a_row['game_id']?>"><?=$a_row['game_name']?></a></td>
+<a href="add-game-form.php" class="btn btn-primary">Add a game</a>
 <td><?=$a_row['rating']?></td>
 </tr>
 <?php endwhile;?>
